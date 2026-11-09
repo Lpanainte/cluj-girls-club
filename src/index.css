@@ -1,0 +1,18 @@
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #35272d;
+  background-color: #faf7f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}

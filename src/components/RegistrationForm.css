@@ -1,0 +1,112 @@
+
+.registration-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(35, 22, 29, 0.75);
+}
+
+.registration-modal {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #faf7f2;
+}
+
+.registration-modal h2 {
+  font-size: 34px;
+  margin: 12px 0;
+  color: #35272d;
+}
+
+.registration-subtitle {
+  margin-bottom: 28px;
+  color: #875268;
+}
+
+.registration-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.registration-modal form > label:not(.registration-consent) {
+  font-size: 13px;
+  font-weight: 600;
+  color: #35272d;
+}
+
+.registration-modal form > input {
+  padding: 14px 16px;
+  border: 1px solid #e7d5d9;
+  border-radius: 6px;
+  background: white;
+  color: #35272d;
+  font: inherit;
+  margin-bottom: 10px;
+}
+
+.registration-modal form > input:focus {
+  outline: 1px solid #873b54;
+}
+
+.registration-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.registration-consent input {
+  margin-top: 3px;
+  accent-color: #873b54;
+}
+
+.registration-submit {
+  padding: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #873b54;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.registration-submit:hover {
+  background: #6e2c43;
+}
+
+.registration-note {
+  text-align: center;
+  font-size: 11px;
+  color: #99868c;
+}
+
+.registration-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  color: #35272d;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .registration-modal {
+    padding: 28px 22px;
+  }
+}
